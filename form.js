@@ -9,6 +9,19 @@ var config = {
 
 firebase.initializeApp(config);
 
+const messaging = firebase.messaging();
+messaging.requestPermission()
+.then(function() {
+    console.log("have permission");
+    return messaging.getToken();
+})
+.then(function(token){
+    console.log(token);
+})
+.catch(function(err) {
+    console.log("error occured");
+})
+
 var database = firebase.database();
 
 var newContact = {};

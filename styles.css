@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0 1rem;
+}
+
+#app-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: sticky;
+    top: 0;
+
+    background: white;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+}

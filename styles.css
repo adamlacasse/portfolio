@@ -9,6 +9,7 @@ body {
     flex-direction: column;
 }
 
+/* TODO: get sticky header to play nice with html navigation */
 header {
     position: sticky;
     top: 0;
@@ -16,8 +17,29 @@ header {
     background: white;
 }
 
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    list-style-type: none;
+}
+
+#app-header > h1 {
+    margin-bottom: .35rem;
+}
+
+#app-header > h3 {
+    margin-top: .35rem;
+}
+
 main {
-    flex: 1;
+   background: lawngreen;
+}
+
+.selected {
+    background: lawngreen;
 }
 
 footer {

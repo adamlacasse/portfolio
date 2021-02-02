@@ -1,9 +1,29 @@
+* {
+    margin: 0;
+}
+
 .app {
     font-family: ibm-plex-mono, sans-serif;
-    padding: 0 1rem 0 1rem;
+    background: rgb(230, 228, 228);
+    padding: 1rem 5vw;
+    min-height: 100vh;
 }
 
 .emphasized-words {
     font-size: 1.1rem;
     font-weight: 700;
+}
+
+.collapsible-header {
+    span {
+        cursor: pointer;
+    }
+
+    span:focus, span:hover {
+        background-color: dodgerblue;
+        color: white;
+        border-radius: 0.3em;
+        padding: .25rem 0;
+        outline: none;
+    }
 }

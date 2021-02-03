@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import '../styles/Bio.scss';
 import CollapsibleTriggerWord from './CollapsibleTriggerWord';
 
 export default () => {
@@ -7,7 +6,7 @@ export default () => {
 
   return (
     <div className="bio">
-        <h3 className="collapsible-header" >
+        <h3 className="collapsible-header">
             <span onClick={() => setIsOpen(!isOpen)} onKeyPress={() => setIsOpen(!isOpen)} tabIndex={0}>
                 <CollapsibleTriggerWord triggerWord="biography" />
             </span>

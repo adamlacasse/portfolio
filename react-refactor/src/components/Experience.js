@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import '../styles/Bio.scss';
 import CollapsibleTriggerWord from './CollapsibleTriggerWord';
 
 export default () => {
@@ -20,7 +19,7 @@ export default () => {
                         <li>
                             <h3><a href="https://www.libertymutual.com/" target="_blank" rel="noopener noreferrer">Liberty Mutual Insurance</a></h3>
                             <h4>June 2019 to present</h4>
-                            <p>I do cool stuff...</p>
+                            <p>I'm part of an award-winning team that creates web applications for Liberty's Global Leadership, Learning, and Talent (GLLT) division. We primarily develop Node/React/Redux front ends with Java Spring Boot & PostgresSQL back ends. We are dedicated Agile practicioners.</p>
                         </li>
                     </ul>
                 </article>

@@ -11,13 +11,19 @@ import javascriptImg from '../images/javascript.svg';
 export default () => {
     return (
         <nav>
-            <img src={javascriptImg} alt="javaScript logo" />
-            <img src={nodeJs} alt="node.js logo" />
-            <img src={reactRedux} alt="react-redux logo" />
-            <img src={expressImg} alt="express.js logo" />
-            <img src={javaImg} alt="java logo" />
-            <img src={springBootImg} alt="Spring Boot logo" />
-            <img src={postgresImg} alt="PostgresSQL logo" />
+            <div className="icon-container">
+                <img src={javascriptImg} alt="javaScript logo" />
+                <img src={nodeJs} alt="node.js logo" />
+                <img src={reactRedux} alt="react-redux logo" />
+                <img src={expressImg} alt="express.js logo" />
+                <img src={javaImg} alt="java logo" />
+                <img src={springBootImg} alt="Spring Boot logo" />
+                <img src={postgresImg} alt="PostgresSQL logo" />
+            </div>
+            <h3 className="collapsible-header">
+                <span tabIndex={0}>openOrCloseAllSections</span>
+                {' = () => { // try me }'}
+            </h3>
         </nav>
     );
 };

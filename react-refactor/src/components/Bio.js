@@ -8,7 +8,6 @@ export default () => {
   return (
     <div className="bio">
         <h3 className="collapsible-header" >
-            {'const '}
             <span onClick={() => setIsOpen(!isOpen)} onKeyPress={() => setIsOpen(!isOpen)} tabIndex={0}>
                 <CollapsibleTriggerWord triggerWord="biography" />
             </span>
@@ -18,8 +17,8 @@ export default () => {
             <>
                 <article>
                     <p>
-                        I'm a <span className="emphasized-words">full stack software engineer</span>, currently employed full time on an award-winning team at 
-                        Liberty Mutual Insurance. I specialize in <span className="emphasized-words">React.js</span> and <span className="emphasized-words">Redux</span> front-ends, 
+                        I'm a <span className="emphasized-words">full stack software engineer</span>, currently employed full time on an award-winning team at{' '}
+                        <a href="https://www.libertymutual.com/" target="_blank" rel="noopener noreferrer">Liberty Mutual Insurance</a>. I specialize in <span className="emphasized-words">React.js</span> and <span className="emphasized-words">Redux</span> front-ends, 
                         and <span className="emphasized-words">Java Spring Boot</span> back-ends with <span className="emphasized-words">PostgreSQL</span> databases hosted on{' '}
                         <span className="emphasized-words">AWS</span>, but I have experience in a potpourri of other technologies as well.
                     </p>

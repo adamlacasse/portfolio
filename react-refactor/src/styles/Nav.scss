@@ -1,0 +1,18 @@
+nav {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+        list-style-type: none;
+    }
+
+    .mb {
+        margin-bottom: 1rem;
+    }
+
+    img {
+        max-height: 5rem;
+    }
+}

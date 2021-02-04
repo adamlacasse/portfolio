@@ -1,4 +1,1 @@
-# Adam LaCasse's Portforlio Page
-
-deployed site: https://adamlacasse.github.io/portfolio/
-
+Deployed site: https://www.adamlacasse.com/

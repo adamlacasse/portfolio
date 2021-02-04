@@ -17,7 +17,7 @@ export default ({openSections, toggleOpenSection}) => {
                     <ul>
                         <li>
                             <h3><a href="https://github.com/adamlacasse" target="_blank" rel="noopener noreferrer">See My GitHub Profile</a></h3>
-                            <p>I'll post some samples here later ;-)</p>
+                            <p>I'll post some samples here later ;-) This site was created with React and Sass.</p>
                         </li>
                     </ul>
                 </article>

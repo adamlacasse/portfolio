@@ -52,8 +52,12 @@
     }
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 600px) {
     img {
+        display: none;
+    }
+
+    #skillz {
         display: none;
     }
 }

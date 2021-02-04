@@ -14,7 +14,7 @@ export default ({openSections, setOpenSections}) => {
         if (openSections.length !== defaultOpenSections.length) {
             return setOpenSections(defaultOpenSections);
         }
-        return setOpenSections([])
+        return setOpenSections([]);
     };
 
     return (

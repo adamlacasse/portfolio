@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import CollapsibleTriggerWord from './CollapsibleTriggerWord';
 
-export default () => {
-  const [isOpen, setIsOpen] = useState(true);
+export default ({openSections, toggleOpenSection}) => {
+    const isOpen = openSections.includes('experience');
 
   return (
     <div className="experience">
         <h3 className="collapsible-header" >
-            <span onClick={() => setIsOpen(!isOpen)} onKeyPress={() => setIsOpen(!isOpen)} tabIndex={0}>
+            <span onClick={() => toggleOpenSection('experience')} onKeyPress={() => toggleOpenSection('experience')} tabIndex={0}>
                 <CollapsibleTriggerWord triggerWord="experience" />
             </span>
             {` = () => {${!isOpen ? '};' : ''}`}

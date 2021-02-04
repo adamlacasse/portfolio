@@ -29,8 +29,8 @@ export default ({openSections, setOpenSections}) => {
                 <img src={postgresImg} alt="PostgresSQL logo" />
             </div>
             <h3 className="collapsible-header">
-                <span tabIndex={0} onClick={handleClick}>openOrCloseAllSections</span>
-                {' = () => { // try me }'}
+                <span tabIndex={0} onClick={handleClick} onKeyPress={handleClick}>openOrCloseAllSections</span>
+                {' = () => { // try me! }'}
             </h3>
         </nav>
     );

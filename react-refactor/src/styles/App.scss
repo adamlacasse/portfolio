@@ -31,7 +31,7 @@
     }
 }
 
-.bio, .experience {
+.bio, .experience, .project-samples {
     
     hr {
         border: 1px solid dodgerblue;
@@ -41,6 +41,10 @@
 
     article {
         margin: .5rem 2rem;
+
+        h4 {
+            margin-bottom: .5rem;
+        }
     }
 
     p {

@@ -1,5 +1,4 @@
 import React from 'react';
-import CollapsibleTriggerWord from './CollapsibleTriggerWord';
 
 export default ({openSections, toggleOpenSection}) => {
   const isOpen = openSections.includes('biography');
@@ -8,7 +7,7 @@ export default ({openSections, toggleOpenSection}) => {
     <div className="bio">
         <h3 className="collapsible-header">
             <span onClick={() => toggleOpenSection('biography')} onKeyPress={() => toggleOpenSection('biography')} tabIndex={0}>
-                <CollapsibleTriggerWord triggerWord="biography" />
+                biography
             </span>
             {` = () => {${!isOpen ? '};' : ''}`}
         </h3>

@@ -9,25 +9,23 @@ const ProjectsPanel = ({
   displayedWindows,
   setDisplayedWindows,
   setStartMenuOpen,
-}) => {
-  return (
-    <List
-      className={`panel ${showProjectsPanel ? "" : "hidden"}`}
-      id="projects-panel"
-      onMouseEnter={() => setShowProjectsPanel(true)}
-      onMouseLeave={() => setShowProjectsPanel(false)}
-      onClick={() => {
-        setDisplayedWindows([...displayedWindows, "projects"]);
-        setShowProjectsPanel(false);
-        setStartMenuOpen(false);
-      }}
-    >
-      <ListItem>
-        <img src={folderWithTools} alt="folder with tools" />
-        <span>Project Samples</span>
-      </ListItem>
-    </List>
-  );
-};
+}) => (
+  <List
+    className={`panel ${showProjectsPanel ? "" : "hidden"}`}
+    id="projects-panel"
+    onMouseEnter={() => setShowProjectsPanel(true)}
+    onMouseLeave={() => setShowProjectsPanel(false)}
+    onClick={() => {
+      setDisplayedWindows([...displayedWindows, "projects"]);
+      setShowProjectsPanel(false);
+      setStartMenuOpen(false);
+    }}
+  >
+    <ListItem disabled={displayedWindows.includes("projects")}>
+      <img src={folderWithTools} alt="folder with tools" />
+      <span>Project Samples</span>
+    </ListItem>
+  </List>
+);
 
 export default ProjectsPanel;

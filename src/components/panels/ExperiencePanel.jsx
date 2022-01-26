@@ -9,25 +9,23 @@ const ExperiencePanel = ({
   displayedWindows,
   setDisplayedWindows,
   setStartMenuOpen,
-}) => {
-  return (
-    <List
-      className={`panel ${showExperiencePanel ? "" : "hidden"}`}
-      id="experience-panel"
-      onMouseEnter={() => setshowExperiencePanel(true)}
-      onMouseLeave={() => setshowExperiencePanel(false)}
-      onClick={() => {
-        setDisplayedWindows([...displayedWindows, "experience"]);
-        setshowExperiencePanel(false);
-        setStartMenuOpen(false);
-      }}
-    >
-      <ListItem>
-        <img src={resumeIcon} alt="resume icon" />
-        <span>Experience</span>
-      </ListItem>
-    </List>
-  );
-};
+}) => (
+  <List
+    className={`panel ${showExperiencePanel ? "" : "hidden"}`}
+    id="experience-panel"
+    onMouseEnter={() => setshowExperiencePanel(true)}
+    onMouseLeave={() => setshowExperiencePanel(false)}
+    onClick={() => {
+      setDisplayedWindows([...displayedWindows, "experience"]);
+      setshowExperiencePanel(false);
+      setStartMenuOpen(false);
+    }}
+  >
+    <ListItem disabled={displayedWindows.includes("experience")}>
+      <img src={resumeIcon} alt="resume icon" />
+      <span>Experience</span>
+    </ListItem>
+  </List>
+);
 
 export default ExperiencePanel;

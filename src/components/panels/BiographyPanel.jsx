@@ -9,26 +9,22 @@ const BiographyPanel = ({
   displayedWindows,
   setDisplayedWindows,
   setStartMenuOpen,
-}) => {
-  const windowIsOpen = displayedWindows.includes("biography");
-  
-  return (
-    <List
-      className={`panel ${showBiographyPanel ? "" : "hidden"}`}
-      id="biography-panel"
-      onMouseEnter={() => setShowBiographyPanel(true)}
-      onMouseLeave={() => setShowBiographyPanel(false)}
-      onClick={() => {
-        setDisplayedWindows([...displayedWindows, "biography"]);
-        setStartMenuOpen(false);
-      }}
-    >
-      <ListItem disabled={windowIsOpen}>
-        <img src={globeIcon} alt="globe icon" />
-        <span>Biography</span>
-      </ListItem>
-    </List>
-  );
-};
+}) => (
+  <List
+    className={`panel ${showBiographyPanel ? "" : "hidden"}`}
+    id="biography-panel"
+    onMouseEnter={() => setShowBiographyPanel(true)}
+    onMouseLeave={() => setShowBiographyPanel(false)}
+    onClick={() => {
+      setDisplayedWindows([...displayedWindows, "biography"]);
+      setStartMenuOpen(false);
+    }}
+  >
+    <ListItem disabled={displayedWindows.includes("biography")}>
+      <img src={globeIcon} alt="globe icon" />
+      <span>Biography</span>
+    </ListItem>
+  </List>
+);
 
 export default BiographyPanel;

@@ -1,15 +1,9 @@
-# Welcome to nineties-fun
+# Hi, I'm Adam
+## Welcome to the repo for my portfolio repo
 
-This is a sandbox to mess around with the 
-<a
-        href="https://react95.io/"
-        target="_blank"
-        rel="noopener noreferrer"
-    >
-React95
-</a> component library.
+Find the deployed site at: https://www.adamlacasse.com/
 
-### Potential Future Enhancements
+### Potential future enhancements to this Windows95 themed version of the site include
 
 <ul>
     <li>Double click window headers to expand to full desktop

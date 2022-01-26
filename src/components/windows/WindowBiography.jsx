@@ -54,27 +54,6 @@ export default function WindowBiography(props) {
       <WindowContent>
       <article>
           <p>
-            I'm a{" "}
-            <span className="emphasized-words">
-              full stack software engineer
-            </span>
-            , currently employed full time on an award-winning team at{" "}
-            <a
-              href="https://www.libertymutual.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Liberty Mutual Insurance
-            </a>
-            . I specialize in <span className="emphasized-words">React.js</span>{" "}
-            and <span className="emphasized-words">Redux</span> front-ends, and{" "}
-            <span className="emphasized-words">Java Spring Boot</span> back-ends
-            with <span className="emphasized-words">PostgreSQL</span> databases
-            - all hosted on <span className="emphasized-words">AWS</span>. I
-            also have experience in a potpourri of other technologies.
-          </p>
-          <hr />
-          <p>
             I've been a full stack engineer since 2018, when I effected a pretty
             big career change. I had worked in{" "}
             <span className="emphasized-words">

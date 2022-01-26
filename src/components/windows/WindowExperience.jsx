@@ -75,7 +75,7 @@ export default function WindowExperience(props) {
                 I'm part of an award-winning team that creates web applications
                 for Liberty's Global Leadership, Learning, and Talent (GLLT)
                 division. We primarily develop Node/React/Redux front ends with
-                Java Spring Boot & PostgresSQL back ends. We are dedicated{" "}
+                Java Spring Boot & PostgreSQL back ends. We are dedicated{" "}
                 <span className="emphasized-words">Agile</span> practicioners.
               </p>
             </li>

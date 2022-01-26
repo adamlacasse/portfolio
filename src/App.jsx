@@ -7,6 +7,7 @@ import ms_sans_serif_bold from "react95/dist/fonts/ms_sans_serif_bold.woff2";
 import StartMenu from "./components/StartMenu";
 import AppHeader from "./components/AppHeader";
 import LoadingModal from "./components/LoadingModal";
+import WindowIntro from "./components/windows/WindowIntro";
 import WindowBiography from "./components/windows/WindowBiography";
 import WindowExperience from "./components/windows/WindowExperience";
 import WindowProjects from "./components/windows/WindowProjects";
@@ -36,7 +37,7 @@ const GlobalStyles = createGlobalStyle`
 
 const App = () => {
   const [showInitialLoader, setShowInitialLoader] = useState(true);
-  const [count, setCount] = useState(6);
+  const [count, setCount] = useState(5);
 
   const [startMenuOpen, setStartMenuOpen] = useState(false);
 
@@ -52,8 +53,8 @@ const App = () => {
 
   useEffect(() => {
     if (count < 0) {
-     setShowInitialLoader(false);
-     return setDisplayedWindows(["biography"]);
+      setShowInitialLoader(false);
+      return setDisplayedWindows([...displayedWindows, "intro"]);
     }
 
     const intervalId = setInterval(() => {
@@ -79,7 +80,8 @@ const App = () => {
   const startMenuLoaderBottom = (
     <section className="loader-bottom">
       <p>
-        Again, just kidding. Click anywhere on the "desktop" to close this Loader.
+        Again, just kidding. Click anywhere on the "desktop" to close this
+        Loader.
       </p>
     </section>
   );
@@ -121,6 +123,13 @@ const App = () => {
                 topText={startMenuLoaderTopText}
                 bottomText={startMenuLoaderBottom}
                 zIndex={2}
+              />
+            )}
+            {displayedWindows.includes("intro") && (
+              <WindowIntro
+                displayedWindows={displayedWindows}
+                setDisplayedWindows={setDisplayedWindows}
+                windowId="intro"
               />
             )}
             {displayedWindows.includes("biography") && (

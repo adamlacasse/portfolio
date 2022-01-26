@@ -10,6 +10,8 @@ const BiographyPanel = ({
   setDisplayedWindows,
   setStartMenuOpen,
 }) => {
+  const windowIsOpen = displayedWindows.includes("biography");
+  
   return (
     <List
       className={`panel ${showBiographyPanel ? "" : "hidden"}`}
@@ -21,7 +23,7 @@ const BiographyPanel = ({
         setStartMenuOpen(false);
       }}
     >
-      <ListItem>
+      <ListItem disabled={windowIsOpen}>
         <img src={globeIcon} alt="globe icon" />
         <span>Biography</span>
       </ListItem>

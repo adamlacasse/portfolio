@@ -1,0 +1,30 @@
+.window {
+  position: absolute !important;
+  overflow: hidden;
+  width: 75vw;
+  resize: both;
+
+  &-header {
+    display: flex;
+    align-items: center;
+
+    button {
+      margin-left: auto;
+
+      span {
+        color: black;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .emphasized-words {
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+
+  a {
+    color: navy;
+    text-decoration: underline;
+  }
+}

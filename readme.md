@@ -9,4 +9,5 @@ Find the deployed site at: https://www.adamlacasse.com/
     <li>Double click window headers to expand to full desktop
     <li>Resize windows from all four corners
     <li>Arrange windows in different ways automatically, i.e. Spectacle
+    <li>Improve mobile experience
 </ul>

@@ -61,45 +61,124 @@
             <h4 class="card-dates">June 2019 - present</h4>
             <div class="card-content">
               <p>
-                Develop mission critical enterprise software for a diverse user
-                base of over 50,000 international, multi-lingual employees.
+                My award winning team and I develop mission critical enterprise
+                software for a diverse user base of over 50,000 international,
+                multi-lingual employees.
               </p>
               <p>
                 Our software directly impacts Liberty's strategic priority to be
-                a "best place to work" and attract top talent from across the
+                a "best place to work," and attract top talent from across the
                 globe.
               </p>
               <h5>Technology used</h5>
               <ul class="tech-used">
                 <li>Node</li>
                 <li>React</li>
+                <li>Redux</li>
                 <li>Java Spring Framework</li>
-                <li>
-                  <h6>AWS services including</h6>
-                  <ul>
-                    <li>Lambda</li>
-                    <li>S3</li>
-                    <li>EC2</li>
-                    <li>RDS</li>
-                  </ul>
-                </li>
+                <li>AWS</li>
+                <li>PostgreSQL</li>
               </ul>
             </div>
           </div>
           <div class="card">
             <h3 class="card-header">
-              <a href="https:www.libertymutual.com" target="_blank">
+              <a href="https://bootcamp.unh.edu/coding/" target="_blank">
+                UNH Coding Bootcamp
+              </a>
+            </h3>
+            <h4 class="card-role">Teaching Assistant</h4>
+            <h4 class="card-dates">March 2019 - September 2019</h4>
+            <div class="card-content">
+              <p>
+                I came back to the bootcamp where I cut my teeth to help
+                students achieve their coding potential as I had.
+              </p>
+              <h5>Technology used</h5>
+              <ul class="tech-used">
+                <li>MongoDB</li>
+                <li>Express.js</li>
+                <li>React</li>
+                <li>Node</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <h3 class="card-header">
+              <a href="https://www.theatomgroup.com/" target="_blank">
                 The Atom Group
               </a>
             </h3>
             <h4 class="card-role">JavaScript/Web Developer</h4>
-            <h4 class="card-dates">find my dates</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-              ratione, aut inventore quasi est voluptatibus sed pariatur debitis
-              fugit adipisci consequatur temporibus? Architecto adipisci neque
-              dignissimos provident voluptates. Blanditiis, alias!
-            </p>
+            <h4 class="card-dates">November 2018 - June 2019</h4>
+            <div class="card-content">
+              <p>
+                I had two contract assignments where I worked with major
+                companies on streamlining their codebases to improve
+                performance, user experience, and developer experience.
+              </p>
+              <p>
+                I also wrote end to end tests and in the process discovered bugs
+                and performance bottlenecks, which added value to a major
+                offering from a Fortune 100 company.
+              </p>
+              <h5>Technology used</h5>
+              <ul class="tech-used">
+                <li>Node</li>
+                <li>Selenium</li>
+                <li>Nightwatch</li>
+                <li>Sauce Labs</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <h3 class="card-header">
+              <a href="https://www.devinemillimet.com/" target="_blank">
+                Devine Millimet
+              </a>
+            </h3>
+            <h4 class="card-role">Director of Administration</h4>
+            <h4 class="card-dates">July 2015 - March 2018</h4>
+            <div class="card-content">
+              <p>
+                I directed all the day to day operations of New Hampshire's
+                second-largest law firm. The IT, marketing, finance, HR, and
+                facilities departments were all under my care.
+              </p>
+              <p>
+                I introduced operational efficiencies by analyzing processes and
+                boiling down complex issues to their essential components.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <h3 class="card-header">
+              <a href="https://brownrudnick.com/" target="_blank">
+                Brown Rudnick
+              </a>
+            </h3>
+            <h4 class="card-role">Director of Financial Planning & Analysis</h4>
+            <h4 class="card-dates">February 2005 - June 2015</h4>
+            <div class="card-content">
+              <p>
+                I was promoted twice, first from financial analyst to manager,
+                then to director of Financial Planning and Analysis (FP&A). I
+                was in a key leadership role that helped shepherd the company
+                through the 2008 financial crisis, among other challenges.
+              </p>
+              <p>
+                My analysis of systems and processes led to many efficiencies,
+                and ultimately helped to effect a increase in profitability of more
+                than 15%
+              </p>
+              <h5>Technology used</h5>
+              <ul class="tech-used">
+                <li>Excel</li>
+                <li>Crystal Reports</li>
+                <li>SQL</li>
+              </ul>
+            </div>
+            </div>
           </div>
         </div>
       </section>
@@ -113,7 +192,9 @@
         <p>But here is my formal education</p>
         <div class="card-wrapper">
           <div class="card">
-            <h3 class="card-header"><a href="https://www.clarku.edu">Clark University</a></h3>
+            <h3 class="card-header">
+              <a href="https://www.clarku.edu">Clark University</a>
+            </h3>
             <h4 class="card-role">Master's of Science in Computer Science</h4>
             <h4 class="card-dates">Expected graduation, May 2025</h4>
           </div>
@@ -155,13 +236,13 @@
       if (window.matchMedia("(prefers-color-scheme:dark)")) {
         bodyElement.classList.add("dark-mode");
         headerElement.classList.add("dark-mode");
-        cards.forEach(card => card.classList.add("dark-mode"));
+        cards.forEach((card) => card.classList.add("dark-mode"));
       }
 
       const toggleDarkMode = () => {
         bodyElement.classList.toggle("dark-mode");
         headerElement.classList.toggle("dark-mode");
-        cards.forEach(card => card.classList.toggle("dark-mode"));
+        cards.forEach((card) => card.classList.toggle("dark-mode"));
 
         if (bodyElement.classList.contains("dark-mode")) {
           darkModeToggleImage.src = "img/sun.png";

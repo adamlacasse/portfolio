@@ -25,7 +25,13 @@ main {
 
 .card-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 350px 350px;
+}
+
+@media only screen and (max-width: 700px) {
+    .card-wrapper {
+        grid-template-columns: 1fr;
+    }
 }
 
 .card {
@@ -46,8 +52,18 @@ main {
 }
 
 .tech-used {
-    display: flex;
-    text-align: left;
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: .5em;
+}
+
+.tech-used > * {
+    /* max-width: 6em; */
+    /* margin: 0 .5em .5em 0; */
+    /* padding: .25em; */
+    /* border: 1px solid lightyellow; */
 }
 
 #education > p {

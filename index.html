@@ -2,26 +2,175 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="TODO: fix me" />
+    <link rel="icon" type="image" href="/img/pc.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adam LaCasse</title>
+    <title>Adam LaCasse, Senior Software Engineer</title>
+    <meta
+      name="description"
+      content="Portfolio site for Adam LaCasse, senior software engineer. Skills include Node.js React.js Java Spring Framework PostgreSQL Express.js modern web development HTML CSS JavaScript"
+    />
 
     <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,400&display=swap" rel="stylesheet">    <!-- local styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,400&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="styles.css" />
+    <!-- local styles -->
+    <link rel="stylesheet" href="/css/resets.css" />
+    <link rel="stylesheet" href="/css/customProperties.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
-  <body>
-    <header>
-      <ul class="main-content">
-        <li>Background</li>
-        <li>Experience</li>
-        <li>Education</li>
+  <body class="dark-mode">
+    <header class="dark-mode">
+      <ul>
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li>
+          <button type="button" onclick="toggleDarkMode()">
+            <img
+              id="darkmode-toggle-img"
+              src="img/sun.png"
+              title="Toggle dark mode"
+              alt="Sun and moon icon to toggle dark mode"
+            />
+          </button>
+        </li>
       </ul>
     </header>
-    <h1 class="main-content">Madam, I'm Adam.</h1>
-    <h2 class="main-content">I do full stack web development</h2>
+    <main>
+      <section id="intro" class="container">
+        <h1 class="main-content">Hi, I'm Adam LaCasse</h1>
+        <h2 class="main-content">
+          I do <b>full stack web development</b>, among other things.
+        </h2>
+      </section>
+      <section id="experience" class="container">
+        <h2>My experience</h2>
+        <div class="card-wrapper">
+          <div class="card">
+            <h3 class="card-header">
+              <a href="https:www.libertymutual.com" target="_blank">
+                Liberty Mutual Insurance
+              </a>
+            </h3>
+            <h4 class="card-role">Senior Software Engineer</h4>
+            <h4 class="card-dates">June 2019 - present</h4>
+            <div class="card-content">
+              <p>
+                Develop mission critical enterprise software for a diverse user
+                base of over 50,000 international, multi-lingual employees.
+              </p>
+              <p>
+                Our software directly impacts Liberty's strategic priority to be
+                a "best place to work" and attract top talent from across the
+                globe.
+              </p>
+              <h5>Technology used</h5>
+              <ul class="tech-used">
+                <li>Node</li>
+                <li>React</li>
+                <li>Java Spring Framework</li>
+                <li>
+                  <h6>AWS services including</h6>
+                  <ul>
+                    <li>Lambda</li>
+                    <li>S3</li>
+                    <li>EC2</li>
+                    <li>RDS</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <h3 class="card-header">
+              <a href="https:www.libertymutual.com" target="_blank">
+                The Atom Group
+              </a>
+            </h3>
+            <h4 class="card-role">JavaScript/Web Developer</h4>
+            <h4 class="card-dates">find my dates</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              ratione, aut inventore quasi est voluptatibus sed pariatur debitis
+              fugit adipisci consequatur temporibus? Architecto adipisci neque
+              dignissimos provident voluptates. Blanditiis, alias!
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="education" class="container">
+        <h2>My education</h2>
+        <p>
+          Firstly, I am a life long learner. I spend much time reading and
+          watching videos on software, science, music, philosophy, and other fun
+          stuff.
+        </p>
+        <p>But here is my formal education</p>
+        <div class="card-wrapper">
+          <div class="card">
+            <h3 class="card-header"><a href="https://www.clarku.edu">Clark University</a></h3>
+            <h4 class="card-role">Master's of Science in Computer Science</h4>
+            <h4 class="card-dates">Expected graduation, May 2025</h4>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/adamlacasse/" target="_blank">
+            <img
+              class="social-logo"
+              src="/img/LI-Logo.png"
+              alt="LinkedIn logo"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/adamlacasse" target="_blank">
+            <img
+              class="social-logo"
+              id="github-logo"
+              src="/img/github-mark-white.png"
+              alt="GitHub logo"
+            />
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <script>
+      const bodyElement = document.querySelector("body");
+      const headerElement = document.querySelector("header");
+      const darkModeToggleImage = document.querySelector(
+        "#darkmode-toggle-img"
+      );
+      const cards = document.querySelectorAll(".card");
+      const githubLogo = document.querySelector("#github-logo");
+
+      if (window.matchMedia("(prefers-color-scheme:dark)")) {
+        bodyElement.classList.add("dark-mode");
+        headerElement.classList.add("dark-mode");
+        cards.forEach(card => card.classList.add("dark-mode"));
+      }
+
+      const toggleDarkMode = () => {
+        bodyElement.classList.toggle("dark-mode");
+        headerElement.classList.toggle("dark-mode");
+        cards.forEach(card => card.classList.toggle("dark-mode"));
+
+        if (bodyElement.classList.contains("dark-mode")) {
+          darkModeToggleImage.src = "img/sun.png";
+          githubLogo.src = "img/github-mark-white.png";
+        } else {
+          darkModeToggleImage.src = "img/moon.png";
+          githubLogo.src = "img/github-mark.png";
+        }
+      };
+    </script>
   </body>
 </html>

@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    font-family: 'Roboto Flex', sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color-main);
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: var(--header-height);
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: .5em 0;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}

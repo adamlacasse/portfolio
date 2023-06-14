@@ -37,6 +37,11 @@ section {
     .card-wrapper {
         grid-template-columns: 1fr;
     }
+    footer > ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
 }
 
 .card {

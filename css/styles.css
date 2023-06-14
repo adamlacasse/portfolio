@@ -23,6 +23,11 @@ main {
     padding-bottom: 1em 0;
 }
 
+section {
+    padding-top: var(--header-height);
+    margin-top: calc(var(--header-height) * -1);
+}
+
 .card-wrapper {
     display: grid;
     grid-template-columns: 350px 350px;
@@ -52,18 +57,9 @@ main {
 }
 
 .tech-used {
-    /* display: flex;
-    flex-wrap: wrap; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: .5em;
-}
-
-.tech-used > * {
-    /* max-width: 6em; */
-    /* margin: 0 .5em .5em 0; */
-    /* padding: .25em; */
-    /* border: 1px solid lightyellow; */
 }
 
 #education > p {
@@ -98,7 +94,11 @@ header > ul, footer > ul {
 }
 
 footer {
-    /* background-color: lavender; */
+    margin-top: 1rem;
+}
+
+#resume-link {
+    margin: 0;
 }
 
 .social-logo {
